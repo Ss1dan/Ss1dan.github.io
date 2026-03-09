@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // burger.js
-document.addEventListener('DOMContentLoaded', function() {
-    const burgerBtn = document.querySelector('.burger-btn');
-    const closeBtn = document.querySelector('.close-btn');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const body = document.body;
-    const mobileLinks = document.querySelectorAll('.mobile-nav a, .mobile-contacts a');
+//document.addEventListener('DOMContentLoaded', function() {
+//    const burgerBtn = document.querySelector('.burger-btn');
+//    const closeBtn = document.querySelector('.close-btn');
+//    const mobileMenu = document.querySelector('.mobile-menu');
+//    const body = document.body;
+//    const mobileLinks = document.querySelectorAll('.mobile-nav a, .mobile-contacts a');
     
     // Открытие меню
     burgerBtn.addEventListener('click', function() {
@@ -67,4 +67,5 @@ document.addEventListener('DOMContentLoaded', function() {
             closeMenu();
         }
     });
+
 });
