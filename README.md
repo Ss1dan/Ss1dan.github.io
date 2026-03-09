@@ -1,1 +1,208 @@
-# Ss1dan.github.io
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobileindex.css">
+    <title>PC - Главная страница</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <section class="navbar">
+            <div class="main-logo">
+                <a href="README.md"><img src="images/Лого.png" height="70px"></a>
+            </div>
+            <div class="main-menu">
+                <a href="README.md">Главная</a>
+                <a href="config.html" style="padding-left: 30px; padding-right: 30px;">Конфигуратор</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+            <div class="main-contacts">
+                <a href="tel:+79028852540" class="footer-link">+7 (902)-885-25-40</a>
+            </div> 
+        </section>
+        
+    </header>
+    <!-- Конец шапки -->
+  
+    
+<!-- Содержание начало -->
+
+    <!--  Тут первый блок  -->
+    <section class="coll-two">
+        <div class="mainblok-left">
+            <div class="main-text">
+                <h1>Создай <br> компьютер</h1>
+                <p>свой</p>
+            </div>
+            <div class="stak-and-text">
+                <img src="images/палка72.png" height="72px"><p>Сборка компьютера при выборе комплектующих происходит очень легко</p>
+            </div>
+            <div class="button-img">
+                <a href="config.html"><img src="images/Кнопка.png" height="52px"></a>
+            </div>
+            <img src="images/Фотка поменьше.png" style="margin-top: 50px;">
+        </div>
+        <div class="mainblok-right">
+            <div class="image-from-div"><img src="images/Большая фотка.png"></div>
+            <div class="img-border">Множество вариаций<br>для создания Вашего<br>нового компьютера</div>
+        </div>
+    </section>
+    <div class="redline">
+        <div class="marquee-one-line">
+            <div class="marquee-content" id="marqueeContent">
+                <!-- Тут будет текст -->
+            </div>
+        </div>
+    </div>
+    <div class="blueline"></div>
+    <!--  Конец первого блока  -->
+
+    <!--  Тут второй блок  -->
+    <section>
+        <div class="coll-two">
+            <div class="h2-and-line">
+                <h2>О нас</h2>
+                <img src="images/ЛинияЗаголовка.png" height="33px" style="padding-left: 32px;"> 
+            </div>
+        </div>
+     
+        <div class="coll-two">
+            <img src="images/фото.png" height="547px">
+            <div>
+                <div class="about-block">
+                    <img src="images/ГоризонтальнаяЛиния.png" width="33px" height="230px">
+                    <div class="texttxet">
+                        <h3>Кто мы такие?</h3>
+                        <p>Мы люди, которым надоело искать комплектующие на разных сайтах в поисках лучших комплектующих</p>
+                        <p>Мы разработали универсальный конфигуратор компьютеров выбираю лучшие комплектующие для всех функций и задач</p>
+                        <div style="padding-top: 13px;">
+                            <a href="contacts.html"><img src="images/КнопкаКонтакты.png" height="52px"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="whyWe-block">
+                    <h3>Почему мы?</h3>
+                    <div class="icons">
+                        <div class="icons-individual">
+                            <img src="images/Иконка _Удобный интерфейс_.png" width="70px">
+                            <p>Удобный<br>интерфейс</p>
+                        </div>
+                        <div class="icons-individual" style="margin-left: 70px; margin-right: 70px;">
+                            <img src="images/Иконка _Наличие конфигуратора_.png" width="70px">
+                            <p>Наличие<br>конфигуратора</p>
+                        </div>
+                        <div class="icons-individual">
+                            <img src="images/Иконка _Лучшие компононты_.png" width="70px">
+                            <p>Лучшие<br>компоненты</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Конец второго блока  -->
+
+    <div class="shadow-line"></div>
+
+    <!--  Начало третьего блока  -->
+    <section>
+        <div class="line-h2-line">
+            <img src="images/МаленькаяЛиния.png" height="33px" style="padding-right: 32px;">
+            <h2>Любые задачи</h2>
+            <img src="images/МаленькаяЛиния.png" height="33px" style="padding-left: 32px;">
+        </div>
+        <div class="image-text-image">
+            <img src="images/ИгровойПК.png">
+            <div class="center-elements">
+                <p style="margin-bottom: 9px;">Игровой</p>
+                <img src="images/СтрелочкаНалево.png" height="62px">
+                <p>Или</p>
+                <img src="images/СтрелочкаНаправо.png" height="62px">
+                <p style="margin-top: 9px;">Рабочий</p>
+            </div>
+            <img src="images/РабочийПК.png">
+        </div>
+    </section>
+    <!--  Конец третьего блока  -->
+
+    <div class="shadow-line"></div>
+
+    <!--  Начало четвёртого блока  -->
+    <section>
+        <div class="coll-two">
+            <div class="h2-and-line">
+                <img src="images/ЛинияЗаголовка.png" height="33px" style="padding-right: 32px;"> 
+                <h2>Галлерея</h2>
+            </div>
+        </div>
+        <div>
+            <div class="images" style="margin-top: 50px;">
+                <img src="images/img1.png">
+                <img src="images/img2.png">
+                <img src="images/img3.png">
+            </div>
+            <div class="images">
+                <img src="images/img4.png">
+                <img src="images/img5.png">
+                <img src="images/img6.png">
+            </div>
+        </div>
+    </section>
+    <!--  Конец четвёртого блока  -->
+
+<!--  Конец содержания  -->
+    <!--  Подвал  -->
+    <footer>
+        <div class="redline">
+            <div class="marquee-one-line">
+                <div class="marquee-content" id="marqueeContent2">
+                    <!-- Тут будет текст -->
+                </div>
+            </div>
+        </div>
+        <div class="content-footer">
+            <div class="div-with-logo">
+                <div class="main-logo">
+                    <a href="README.md"><img src="images/Лого.png" height="70px"></a>
+                </div>
+                <p>Создай свой<br>компьютер</p>
+            </div>
+            <div class="footer-menu1">
+                <h4>Меню</h4>
+                <nav>  
+                    <ul class="footer-menu">  
+                        <li class="footer-menu-item">
+                            <a href="README.md" class="footer-link">Главная</a>
+                        </li>  
+                        <li class="footer-menu-item">
+                            <a href="config.html" class="footer-link">Конфигуратор</a>
+                        </li>  
+                        <li class="footer-menu-item">
+                            <a href="contacts.html" class="footer-link">Контакты</a>
+                        </li>  
+                    </ul>  
+                </nav>  
+            </div>
+            <div class="footer-menu2">
+                <h4>Контакты</h4>
+                <nav>  
+                    <ul class="footer-menu">  
+                        <li class="footer-menu-item">
+                            <a href="tel:+79028852540" class="footer-link">+7 (902)-885-25-40</a>
+                        </li>  
+                        <li class="footer-menu-item">
+                            <a href="mailto:sashka.332@mail.ru" class="footer-link">sashka.332@mail.ru</a>
+                        </li>   
+                    </ul>  
+                </nav>  
+            </div>
+        </div>
+    </footer>
+    <!--  Подвал  -->
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
