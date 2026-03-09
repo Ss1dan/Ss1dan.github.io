@@ -1,0 +1,213 @@
+/* Добавьте/обновите в dopconfig.css */
+
+/* Стили для выпадающего списка */
+.component-dropdown {
+    background-color: rgba(190, 0, 70, 0.98);
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    max-height: 350px;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Фон для элементов в выпадающем меню */
+.dropdown-content {
+    padding: 5px 0;
+    background: linear-gradient(135deg, rgba(27, 33, 69, 0.1) 0%, rgba(190, 0, 70, 0.9) 100%);
+    border-radius: 4px;
+}
+
+.dropdown-item {
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(27, 33, 69, 0.2);
+    margin: 2px 5px;
+    border-radius: 3px;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+/* Подсветка выбранного элемента в дропдауне */
+.dropdown-item.selected-in-dropdown {
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 3px solid #ffffff;
+}
+
+/* Стиль для выбранного элемента */
+.complection-item.selected {
+    cursor: pointer !important; /* Оставляем курсор pointer для возможности изменения */
+}
+
+.complection-item.selected:hover .complection-section {
+    background-color: rgba(190, 0, 70, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Анимация для обновления цены */
+.price-updated {
+    animation: priceFlash 0.5s ease;
+}
+
+.total-price-updated {
+    animation: totalPriceFlash 0.5s ease;
+}
+
+@keyframes priceFlash {
+    0% { transform: scale(1); color: #fff; }
+    50% { transform: scale(1.05); color: #ffd700; }
+    100% { transform: scale(1); color: #fff; }
+}
+
+@keyframes totalPriceFlash {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Плавные переходы */
+.complection-section, .complection-start-image {
+    transition: all 0.3s ease;
+}
+
+/* Стили для скролла в выпадающем списке */
+.component-dropdown::-webkit-scrollbar {
+    width: 8px;
+}
+
+.component-dropdown::-webkit-scrollbar-track {
+    background: rgba(27, 33, 69, 0.3);
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.component-dropdown::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+}
+
+.component-dropdown::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Градиент для фона элементов в выпадающем меню */
+.dropdown-item {
+    background: linear-gradient(90deg, 
+        rgba(27, 33, 69, 0.3) 0%, 
+        rgba(190, 0, 70, 0.7) 50%, 
+        rgba(27, 33, 69, 0.3) 100%);
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(90deg, 
+        rgba(27, 33, 69, 0.4) 0%, 
+        rgba(190, 0, 70, 0.8) 50%, 
+        rgba(27, 33, 69, 0.4) 100%);
+}
+
+/* Адаптивность для выпадающего списка */
+@media (max-width: 768px) {
+    .dropdown-item > div {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .dropdown-item > div > div:last-child {
+        margin-top: 5px;
+        align-self: flex-end;
+    }
+}
+
+/* Добавьте в dopconfig.css */
+
+/* Отступы между выбранными блоками */
+.complection-item.selected + .complection-item.selected {
+    margin-top: 20px;
+}
+
+/* Отступы между всеми блоками для единообразия */
+.complection-item:not(:first-child) {
+    margin-top: 20px;
+}
+
+/* Убираем отступы у блоков, которые скрыты (дропдауны) */
+.component-dropdown {
+    margin-top: 0 !important;
+}
+
+/* Отступы внутри блоков */
+.complection-section, .complection-start-image {
+    padding-top: 13px !important;
+    padding-bottom: 14px !important;
+    margin: 0 !important;
+}
+
+/* Адаптивность отступов */
+@media (max-width: 768px) {
+    .complection-item:not(:first-child),
+    .complection-item.selected + .complection-item.selected {
+        margin-top: 15px;
+    }
+}
+
+/**/
+/*- адаптация выпадающих списков */
+
+@media (max-width: 768px) {
+    .component-dropdown {
+        position: relative !important;
+        z-index: 10;
+        max-height: 200px;
+    }
+    
+    .dropdown-item > div {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+    
+    .dropdown-item .complection-name {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    
+    .dropdown-item .complection-price {
+        align-self: flex-end;
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .component-dropdown {
+        max-height: 180px;
+    }
+    
+    .dropdown-item {
+        padding: 8px 10px !important;
+    }
+    
+    .dropdown-item .complection-head {
+        font-size: 14px;
+    }
+    
+    .dropdown-item .complection-name {
+        font-size: 12px;
+    }
+    
+    .dropdown-item .complection-price {
+        font-size: 14px;
+    }
+}

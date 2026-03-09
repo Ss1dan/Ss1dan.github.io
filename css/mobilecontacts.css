@@ -1,0 +1,325 @@
+/* Добавьте это в конец файла style.css */
+
+/* Медиа-запросы для адаптации */
+
+/* Планшеты 1200px - 768px */
+@media (max-width: 1200px) {
+    section {
+        width: 90%;
+        max-width: 768px;
+    }
+    
+    .content-footer {
+        width: 90%;
+        max-width: 768px;
+    }
+    
+    .image-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contacts {
+        margin-left: 0;
+        margin-top: 36px;
+    }
+    
+    iframe {
+        width: 100%;
+        max-width: 685px;
+        height: 300px;
+    }
+    
+    .main-menu a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .main-contacts a {
+        font-size: 20px;
+    }
+    
+    .coll-two {
+        justify-content: center;
+    }
+    
+    h2 {
+        width: 300px;
+        font-size: 36px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .h2-and-line img {
+        display: none;
+    }
+}
+
+/* Планшеты 768px и меньше */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .main-logo{
+        margin: 0;
+    }
+    .main-menu {
+        margin-top: 20px;
+    }
+    
+    .main-contacts {
+        margin-top: 10px;
+    }
+    
+    .image-icons {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .content-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-menu1, .footer-menu2 {
+        margin: 20px 0;
+        text-align: center;
+    }
+    
+    .footer-menu2 {
+        text-align: center;
+    }
+    
+    .div-with-logo {
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: 60px;
+    }
+    
+    .main-text p {
+        font-size: 36px;
+        margin-left: -100px;
+    }
+    
+    .h2-and-line {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .h2-and-line img {
+        display: none;
+    }
+    .contacts-items {
+        display: flex;
+        flex-direction: row;
+    }
+    .main-contacts {
+        display: none;
+    }
+}
+
+/* Мобильные устройства 420px - 320px */
+@media (max-width: 425px) {
+    section {
+        width: 95%;
+    }
+    
+    .content-footer {
+        width: 95%;
+    }
+    
+    .main-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+    
+    .main-menu a {
+        font-size: 16px;
+    }
+
+    
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        width: 250px;
+        font-size: 28px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    .main-text p {
+        font-size: 28px;
+        margin-left: -70px;
+        margin-top: 10px;
+    }
+    
+    .main-contacts a {
+        display: none;
+    }
+    
+    .contacts-items {
+
+        text-align: left;
+    }
+    
+    .contacts-items p,
+    .contacts-items a {
+        padding-left: 10;
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    
+    .contacts-items a {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: left;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .social-icons a {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .main-logo img {
+        height: 50px;
+    }
+    
+    .div-with-logo img {
+        height: 50px;
+    }
+    
+    .stak-and-text {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    
+    .button-img {
+        margin-top: 30px;
+    }
+    
+    .img-border {
+        margin-left: -120px;
+        margin-top: 80px;
+        width: 180px;
+        height: 60px;
+        font-size: 16px;
+    }
+    
+    .marquee-content {
+        animation: scroll 120s linear infinite;
+    }
+    
+    .text-item, .plus-item {
+        font-size: 16px;
+    }
+    
+    .footer-menu1 h4,
+    .footer-menu2 h4 {
+        font-size: 24px;
+    }
+    
+    .footer-menu1 a,
+    .footer-menu2 a {
+        font-size: 16px;
+    }
+    
+    .div-with-logo p {
+        font-size: 16px;
+    }
+    
+    iframe {
+        height: 250px;
+    }
+    
+    .image-icons {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .h2-and-line img {
+        display: none;
+    }
+}
+
+/* Очень маленькие экраны 320px и меньше */
+@media (max-width: 320px) {
+    h1 {
+        font-size: 40px;
+    }
+    
+    h2 {
+        width: 200px;
+        font-size: 24px;
+    }
+    
+    .main-text p {
+        font-size: 24px;
+        margin-left: -50px;
+    }
+    
+    .contacts-items p,
+    .contacts-items a {
+        font-size: 16px;
+    }
+    
+    iframe {
+        height: 200px;
+    }
+}
+
+/* Дополнительные улучшения для мобильных устройств */
+@media (max-width: 420px) {
+    /* Улучшение навигации на мобильных */
+    .navbar {
+        padding: 10px 0;
+    }
+    
+    .main-logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    /* Улучшение карты */
+    .image-icons iframe {
+        border-radius: 8px;
+    }
+    
+    /* Улучшение отступов для контактов */
+    .contacts-items {
+        margin-top: 25px;
+    }
+    
+    /* Улучшение социальных иконок */
+    .social-icons img {
+        height: 70px;
+    }
+    
+    /* Улучшение футера */
+    .content-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .footer-menu-item {
+        margin-bottom: 5px;
+    }
+    
+    /* Улучшение бегущей строки */
+    .marquee-one-line::before,
+    .marquee-one-line::after {
+        width: 30px; /* Уменьшаем градиенты на мобильных */
+    }
+}
