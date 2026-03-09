@@ -34,38 +34,39 @@ document.addEventListener('DOMContentLoaded', function() {
 //    const mobileLinks = document.querySelectorAll('.mobile-nav a, .mobile-contacts a');
     
     // Открытие меню
-    burgerBtn.addEventListener('click', function() {
-        mobileMenu.classList.add('active');
-        burgerBtn.classList.add('active');
-        body.classList.add('menu-open');
-    });
+//    burgerBtn.addEventListener('click', function() {
+//        mobileMenu.classList.add('active');
+//        burgerBtn.classList.add('active');
+//        body.classList.add('menu-open');
+//    });
     
     // Закрытие меню
-    function closeMenu() {
-        mobileMenu.classList.remove('active');
-        burgerBtn.classList.remove('active');
-        body.classList.remove('menu-open');
-    }
-    
-    closeBtn.addEventListener('click', closeMenu);
+//    function closeMenu() {
+//        mobileMenu.classList.remove('active');
+//        burgerBtn.classList.remove('active');
+//        body.classList.remove('menu-open');
+//    }
+//    
+//    closeBtn.addEventListener('click', closeMenu);
     
     // Закрытие при клике на ссылку
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', closeMenu);
-    });
+//    mobileLinks.forEach(link => {
+ //       link.addEventListener('click', closeMenu);
+ //   });
     
     // Закрытие при клике вне меню
-    mobileMenu.addEventListener('click', function(e) {
-        if (e.target === mobileMenu) {
-            closeMenu();
-        }
-    });
+//    mobileMenu.addEventListener('click', function(e) {
+//        if (e.target === mobileMenu) {
+//            closeMenu();
+ //       }
+ //   });
     
     // Закрытие по ESC
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            closeMenu();
-        }
-    });
+//    document.addEventListener('keydown', function(e) {
+//        if (e.key === 'Escape') {
+//            closeMenu();
+//        }
+ //   });
 
 });
+
