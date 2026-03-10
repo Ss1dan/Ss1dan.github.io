@@ -405,6 +405,25 @@ document.addEventListener('DOMContentLoaded', function() {
         // Обновляем общую цену
         updateTotalPrice();
         
+        // ========== НОВЫЙ КОД: Отправка события в Яндекс.Метрику ==========
+        // Отправляем событие о выборе компонента
+        if (typeof ym !== 'undefined') {
+            // Рассчитываем текущую общую сумму
+            const total = Object.values(currentConfig).reduce((sum, c) => sum + (c.price || 0), 0);
+            
+            ym(107226571, 'reachGoal', 'component_selected', {
+                component_type: componentType,           // Тип компонента (case, cpu, gpu и т.д.)
+                component_id: component.id,              // ID компонента
+                component_name: component.name,          // Название компонента
+                component_price: component.price,        // Цена компонента
+                total_price: total                        // Общая цена сборки
+            });
+            
+            // Для отладки - можно убрать после проверки
+            console.log('Метрика: выбран компонент', componentType, component.name);
+        }
+        // ========== КОНЕЦ нового кода ==========
+        
         // Обновляем обработчики событий для нового элемента
         setupEventListenersForItem(item);
     }
@@ -522,4 +541,5 @@ document.addEventListener('DOMContentLoaded', function() {
             dropdown.style.display = 'none';
         });
     }
+
 });
