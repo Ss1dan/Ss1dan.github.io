@@ -405,7 +405,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Обновляем общую цену
         updateTotalPrice();
         
-        // ========== НОВЫЙ КОД: Отправка события в Яндекс.Метрику ==========
+        // ========== Отправка события в Яндекс.Метрику ==========
         // Отправляем событие о выборе компонента
         if (typeof ym !== 'undefined') {
             // Рассчитываем текущую общую сумму
@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Для отладки - можно убрать после проверки
             console.log('Метрика: выбран компонент', componentType, component.name);
         }
-        // ========== КОНЕЦ нового кода ==========
+        // ========== конец ==========
         
         // Обновляем обработчики событий для нового элемента
         setupEventListenersForItem(item);
@@ -543,3 +543,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
