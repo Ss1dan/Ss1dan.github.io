@@ -20,7 +20,7 @@ function createMarquee(containerId, text, repeatCount = 25) {
     
     // Нижняя строка в футере
     createMarquee('marqueeContent2', 'Добро пожаловать', 25);
-});
+);
 
 // Функция для загрузки счётчика
 function loadYandexMetrica() {
@@ -58,3 +58,4 @@ if (agreeButton) {
         }
     });
 }
+
