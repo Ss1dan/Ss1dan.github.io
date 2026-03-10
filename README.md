@@ -23,6 +23,11 @@
     <title>PC - Главная страница</title>
 </head>
 <body>
+    <!-- Соглашение на сбор аналитики -->
+    <div id="cookie-notification" class="cookie-notification" style="display: none;">
+  <p>Мы используем файлы cookie и Яндекс.Метрику, чтобы улучшить работу сайта. Продолжая использовать сайт, вы соглашаетесь с этим.</p>
+  <button id="agree-button">Согласен</button>
+</div>
     <!-- Шапка -->
     <header>
         <section class="navbar">
