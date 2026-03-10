@@ -510,3 +510,103 @@ header{
     display: flex;
     margin-top: 33px;
 }
+
+/* Стили для уведомления о cookie */
+.cookie-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #f0f0f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    z-index: 1000;
+    animation: slideUp 0.5s ease forwards;
+    display: none; /* Скрыт по умолчанию, показывается через JS */
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cookie-notification p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+.cookie-notification a {
+    color: #ff4b4b; /* Яркий акцент (можно заменить на ваш фирменный цвет) */
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 75, 75, 0.5);
+}
+
+.cookie-notification a:hover {
+    border-bottom-color: #ff4b4b;
+}
+
+.cookie-notification .button {
+    background: #ff4b4b; /* Основной цвет кнопки */
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 75, 75, 0.3);
+    letter-spacing: 0.5px;
+    border: 1px solid transparent;
+}
+
+.cookie-notification .button:hover {
+    background: #ff3333;
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(255, 75, 75, 0.4);
+}
+
+.cookie-notification .button:active {
+    transform: scale(0.98);
+}
+
+/* Адаптация для мобильных устройств */
+@media (min-width: 768px) {
+    .cookie-notification {
+        left: auto;
+        right: 20px;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookie-notification {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 16px 20px;
+        border-radius: 12px;
+    }
+    
+    .cookie-notification .button {
+        width: 100%;
+        text-align: center;
+    }
+}
